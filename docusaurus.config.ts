@@ -5,6 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  plugins: [],
   title: "オズチャット -Oz Chat- 公式ガイドブック",
   tagline:
     "AI恋愛シミュレーションチャットゲーム「オズチャット -Oz Chat-」の公式ガイドブックです。",
@@ -33,6 +34,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/Trippy-inc/ozchat-docs/edit/main/",
         },
         blog: false,
         theme: {
@@ -43,6 +45,8 @@ const config: Config = {
   ],
 
   themeConfig: {
+    defaultMode: "light",
+    disableSwitch: false,
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
