@@ -9,7 +9,7 @@ const config: Config = {
   title: "オズチャット -Oz Chat- 公式ガイドブック",
   tagline:
     "AI恋愛シミュレーションチャットゲーム「オズチャット -Oz Chat-」の公式ガイドブックです。",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
 
   // Set the production url of your site here
   url: "https://docs.0z.chat",
@@ -47,8 +47,18 @@ const config: Config = {
   themeConfig: {
     defaultMode: "light",
     disableSwitch: false,
+
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/ogp.png",
+
+    metadata: [
+      {
+        name: "description",
+        content:
+          "AI恋愛シミュレーションチャットゲームアプリ「オズチャット -Oz Chat-」の公式攻略ガイドブックです。ゲームの攻略情報やキャラクター、性格ステータスやMPの説明、課金システムや安全性に関する情報などを掲載しています。",
+      },
+    ],
+
     navbar: {
       title: "オズチャット -Oz Chat- 公式ガイドブック",
       logo: {
@@ -60,7 +70,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "攻略情報",
         },
         {
           href: "https://0z.chat",
@@ -70,40 +80,48 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
-          title: "Docs",
+          title: "ページ",
           items: [
             {
-              label: "Tutorial",
+              label: "オズチャットとは",
               to: "/docs/intro",
+            },
+            {
+              label: "ゲーム攻略",
+              to: "/docs/category/ゲーム攻略",
+            },
+            {
+              label: "キャラクター攻略",
+              to: "/docs/category/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E6%94%BB%E7%95%A5%E3%82%AC%E3%82%A4%E3%83%89",
             },
           ],
         },
         {
-          title: "Community",
+          title: "コミュニティ",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://discord.gg/WA3GApJgcZ",
             },
             {
               label: "X",
-              href: "https://x.com/docusaurus",
+              href: "https://x.com/0z_chat",
             },
           ],
         },
         {
-          title: "More",
+          title: "リンク",
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "公式サイト",
+              href: "https://0z.chat/ja/",
+            },
+            {
+              label: "利用規約",
+              href: "https://docs.tr1ppy.com/tr1ppy/Oz-013ef3107998491380bc09a4046e9f8b",
             },
           ],
         },

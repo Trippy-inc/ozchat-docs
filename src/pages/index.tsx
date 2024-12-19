@@ -21,7 +21,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            はじめる
+            遊び方を見る
           </Link>
         </div>
       </div>
@@ -32,10 +32,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title="【公式】オズチャット -Oz Chat- 公式ガイドブック">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

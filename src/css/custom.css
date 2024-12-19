@@ -1,18 +1,24 @@
-/**
+/*
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
 /* You can override the default Infima variables here. */
+
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* メインカラーを #FF74A7 に設定 */
+  --ifm-color-primary: #ff74a7;
+  /* 濃い方向（Dark～Darkest）は若干サチュレーションと明度を下げた色 */
+  --ifm-color-primary-dark: #e66a97;
+  --ifm-color-primary-darker: #d05e87;
+  --ifm-color-primary-darkest: #b95579;
+
+  /* 明るい方向（Light～Lightest）は #FF74A7 よりも淡い #FF95BC を軸にした階調 */
+  --ifm-color-primary-light: #ff85b2;
+  --ifm-color-primary-lighter: #ff95bc;
+  --ifm-color-primary-lightest: #ffa9c8;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: "Noto Sans JP", "Avenir", "Helvetica Neue",
@@ -20,14 +26,28 @@
     "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* For readability concerns, use a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* ダークモードでは淡いカラーをメインにしてコントラストを確保 */
+  --ifm-color-primary: #ff95bc;
+  --ifm-color-primary-dark: #ff85b2;
+  --ifm-color-primary-darker: #ff74a7;
+  --ifm-color-primary-darkest: #e66a97;
+  --ifm-color-primary-light: #ffa3c4;
+  --ifm-color-primary-lighter: #ffb4d0;
+  --ifm-color-primary-lightest: #ffcee2;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
